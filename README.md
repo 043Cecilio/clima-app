@@ -15,7 +15,6 @@ Para cumprir os requisitos do Projeto 1, foram utilizadas as seguintes ferrament
 Conforme as diretrizes do projeto, o desenvolvimento contou com o apoio de ferramentas de IA (Google Gemini) para os seguintes fins:
 1. Estruturação inicial do ficheiro `App.jsx` com os componentes do Material-UI.
 2. Esclarecimento de dúvidas sobre a integração correta do hook `useRef` em conjunto com eventos de clique e teclado (Enter).
-3. Auxílio na resolução de códigos de erro HTTP (como o erro 401 de ativação da chave da API) e formatação deste ficheiro README.
 
 ## Como executar o projeto localmente
 
