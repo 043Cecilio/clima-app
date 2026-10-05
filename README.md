@@ -1,16 +1,25 @@
-# React + Vite
+# Explorador de Clima - Projeto 1 (ReactJS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma Single Page Application (SPA) desenvolvida para a disciplina de Programação Web Fullstack. A aplicação permite consultar o clima em tempo real de qualquer cidade do mundo.
 
-Currently, two official plugins are available:
+## Tecnologias e Requisitos Atendidos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Para cumprir os requisitos do Projeto 1, foram utilizadas as seguintes ferramentas:
 
-## React Compiler
+* **API Externa (JSON):** [OpenWeatherMap](https://openweathermap.org/). Utilizada para consumir os dados meteorológicos reais via AJAX (utilizando a função nativa `fetch` do JavaScript).
+* **React Hook Exigido:** `useRef`. Foi aplicado no campo de texto (`TextField`) para capturar o nome da cidade digitada pelo utilizador. A escolha do `useRef` em vez do `useState` evita que o componente seja re-renderizado a cada letra digitada, otimizando o desempenho da aplicação.
+* **Biblioteca Externa:** [Material-UI (MUI)](https://mui.com/material-ui/). Utilizada para a construção da interface de utilizador (UI), garantindo um design responsivo e moderno com componentes prontos como `Card`, `TextField`, `Button` e `Typography`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Uso de Inteligência Artificial
 
-## Expanding the ESLint configuration
+Conforme as diretrizes do projeto, o desenvolvimento contou com o apoio de ferramentas de IA (Google Gemini) para os seguintes fins:
+1. Estruturação inicial do ficheiro `App.jsx` com os componentes do Material-UI.
+2. Esclarecimento de dúvidas sobre a integração correta do hook `useRef` em conjunto com eventos de clique e teclado (Enter).
+3. Auxílio na resolução de códigos de erro HTTP (como o erro 401 de ativação da chave da API) e formatação deste ficheiro README.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Como executar o projeto localmente
+
+1. Clone este repositório.
+2. Abra o terminal na pasta do projeto e instale as dependências:
+   ```bash
+   npm install
